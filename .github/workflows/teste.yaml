@@ -1,8 +1,9 @@
 name: "Teste Workflow"
 on: [push] # quando vai fazer
-    jobs: #o que vai fazer
-      runs-on: ubuntu-latest #onde vai fazer
-      steps: #passos
-        - name: "Test step" #nome do passo
-          run: | #oq o passo vai fazer
-            echo "Hello, guys this is a test for the codespaces"    
+jobs: #o que vai fazer
+  test-job:
+    runs-on: ubuntu-latest #onde vai fazer
+    steps: #passos
+      - name: "Test step" #nome do passo
+        run: | #oq o passo vai fazer
+          echo "Hello, guys this is a test for the codespaces"    
