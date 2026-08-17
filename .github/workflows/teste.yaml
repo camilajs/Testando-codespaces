@@ -1,0 +1,8 @@
+name: "Teste Workflow"
+on:
+  push:
+    branches:
+      - main
+    run: 
+      - "Hello, World"
+  
